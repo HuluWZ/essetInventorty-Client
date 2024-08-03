@@ -28,7 +28,7 @@ const Dashboard = () => {
   var totalSalesMoneyFormat = new Intl.NumberFormat("en-US", {
     style: "currency",
     currency: "ETB",
-  }).format(report?.TotalSales);
+  }).format(report?.TotalSales ?? 0);
 
 
   if (isLoading) {
